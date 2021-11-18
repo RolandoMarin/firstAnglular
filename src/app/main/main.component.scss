@@ -1,0 +1,16 @@
+.main{
+   max-width: 400px;
+}
+p{
+    background-color: lightcoral;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid black;
+}
+.hidden{
+    visibility: hidden;
+}
+.dropdown-button{
+    user-select: none;
+    border: 1px solid grey;
+}
