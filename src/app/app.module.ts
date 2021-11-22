@@ -9,15 +9,21 @@ import { MainComponent } from './main/main.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
+import { TodoListComponent } from './todoList/todoList.component';
+import { TodoItemComponent } from './todoItem/todoItem.component';
 
 @NgModule({
-  declarations: [				
+  declarations: [							
     AppComponent,
       NavbarComponent,
       SidebarComponent,
       MainComponent,
       AboutComponent,
-      ProfileComponent
+      ProfileComponent,
+      PageNotfoundComponent,
+      TodoListComponent,
+      TodoItemComponent
    ],
   imports: [
     BrowserModule,

@@ -1,10 +1,23 @@
-<div >
-<app-navbar></app-navbar>
- 
- <div class="container">
- 
-<router-outlet></router-outlet>
-   </div>
-   <!--Footer Here if needed lol-->
+<div>
+  <app-navbar></app-navbar>
+  <div class="container">
+    <!-- Data Interpolation - doesnt bind as much as it interprets/parses the variable into text -->
+    <h1>{{ title }}</h1> 
 
- </div>
+    <!-- property binding - bind one way from component to view -->
+    <div [class.red]="isRed">this text is red when isRed is true</div>
+
+    <!-- event binding - bind data from the component to the view -->
+    <button (click)="toggleRed()">Toggle Red</button>
+
+    <!-- two way binding -->
+    <!-- <div>
+      <input type="text" [(value)]="aVariable">
+    </div> -->
+
+    <hr>
+
+    <router-outlet></router-outlet>
+  </div>
+  <!-- footer here if need -->
+</div>

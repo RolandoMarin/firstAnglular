@@ -1,0 +1,9 @@
+<div class="todoList">
+
+<input type = "text" #todoInput>
+  <button>submit</button>
+  <ul>
+    <li *ngFor = "let item of list"><app-todoItem [item]= "item" (removeEvent)= "onRemove($event)"></app-todoItem></li>
+  </ul>
+
+</div>
